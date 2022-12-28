@@ -1,0 +1,19 @@
+<style>
+  .active{
+    background-color: #FFC107 !important;
+  }
+  .nav-link{
+    color: black !important;
+  }
+</style>
+
+
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/" {% if request.path == '/' %} class="nav-link active" {% else %} class="nav-link" {% endif %} aria-current="page">Главная</a></li>
+        <li class="nav-item"><a href="/contacts/" {% if request.path == '/contacts/' %} class="nav-link active" {% else %} class="nav-link" {% endif %}>Личные данные</a></li>
+      <li class="nav-item"><a href="/notebook/" {% if request.path == '/notebook/' %} class="nav-link active" {% else %} class="nav-link" {% endif %}>Расчет</a></li>
+      </ul>
+    </header>
+  </div>

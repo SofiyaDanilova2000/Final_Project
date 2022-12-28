@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    {% include 'components/includes.html' %}
+</head>
+<style>
+  .img1{
+    position: absolute;
+    width: 24%;
+    top: 60%;
+    left: 77%;
+  }
+  .img2{
+    position: absolute;
+    width: 38%;
+    top: 12%;
+    transform: rotate(180deg);
+    left: 0%;
+  }
+  .img3{
+    position: absolute;
+    width: 24%;
+    top: 0%;
+    left: -2%;
+  }
+</style>
+<body class="d-flex flex-column h-100">
+{% include 'components/header.html' %}
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Анализ данных VK группы "Надежда" </h1>
+    <div class="col-lg-6 mx-auto">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="/notebook/"><button type="button" class="btn btn-warning btn-lg px-4 gap-3">Перейти к расчету</button></a>
+      </div>
+    </div>
+    <img class = "img1" src="../static/IMG_7671.PNG" alt="">
+    <img class = "img2" src="../static/IMG_7672.PNG" alt="">
+    <img class = "img3" src="../static/IMG_7673.PNG" alt="">
+  </div>
+</body>
+</html>
